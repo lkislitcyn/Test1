@@ -19,8 +19,8 @@ class Solution {
             return ArrayBack;
         } else {
         for (i=0;i<nums.length-1;i++)
-        for (j=0;j<nums.length;j++)
-            if (i!=j && i!=nums.length)
+        for (j=i+1;j<nums.length;j++)
+          //  if (i!=j && i!=nums.length)
             if ((nums[i]+nums[j])==target) {ArrayBack[0]=i;ArrayBack[1]=j;return ArrayBack; }
 
         }
